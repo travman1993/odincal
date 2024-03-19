@@ -1,3 +1,7 @@
+*{
+    border: red 1px;
+}
+
 body{
     display:flex;
     justify-content: center;
@@ -5,4 +9,61 @@ body{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+}
+
+h1{
+    font-style: 
+}
+
+.calculator{
+    border: 5px solid darkgrey;
+    background-color: rgba(47, 56, 56, 0.39);
+    border-radius: 5%;
+}
+
+.btn{
+    height: 55px;
+    width: 55px;
+    margin: 10px;
+    font-size: 35px;
+}
+
+#number-btn{
+    border: 1.5px solid black;
+}
+
+#number-btn:hover{
+    background-color: cornsilk;
+}
+
+#arithmatic-btn{
+    border: 1.5px solid black;
+}
+
+#arithmatic-btn:hover{
+    background-color: cornsilk;
+}
+
+#clear-btn{
+    border: 1.5px solid black;
+}
+
+#clear-btn:hover{
+    background-color: cornsilk;
+}
+
+#decimal-btn{
+    border: 1.5px solid black;
+}
+
+#decimal-btn:hover{
+    background-color: cornsilk;
+}
+
+#equal-btn{
+    border: 1.5px solid black;
+}
+
+#equal-btn:hover{
+    background-color: cornsilk;
 }
