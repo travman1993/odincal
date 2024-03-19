@@ -7,17 +7,11 @@ body{
     height: 100vh;
 }
 
-#name{
-    
-}
-
 .calculator{
     border: 7px solid darkgrey;
     background-color: rgba(47, 56, 56, 0.386);
     border-radius: 3%;
     border-style: outset;
-    margin-top: 15px;
-    
 }
 
 .btn{
@@ -27,8 +21,18 @@ body{
     font-size: 35px;
 }
 
-#screen{
+.row-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
+#screen{
+    width: 300px;
+    border: 2px solid black;
+    height: 75px;
+    background-color: green;
 }
 
 #clear-btn{
@@ -52,13 +56,13 @@ body{
     background-color: cornsilk;
 }
 
-#arithmatic-btn{
+#operator-btn{
     border: 3px solid black;
     border-style: ridge;
     background-color: rgba(72, 157, 226, 0.591);
 }
 
-#arithmatic-btn:hover{
+#operator-btn:hover{
     background-color: cornsilk;
 }
 
