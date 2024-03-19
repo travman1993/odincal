@@ -26,13 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-}
-
-#screen{
-    width: 300px;
-    border: 2px solid black;
-    height: 75px;
-    background-color: green;
+    justify-content: space-between;
 }
 
 #clear-btn{
