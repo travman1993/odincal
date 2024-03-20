@@ -13,34 +13,34 @@
         <div class="calculator">
             <div class="row-one">
                 <div class="screen" style="margin-left: 10px; width: 215px; height: 60px; background-color: rgba(43, 124, 97, 0.737);">
-                    <div class="previous">1</div>
-                    <div class="current">2</div>
+                    <div class="previous" style="text-align: end; margin-right: 5px; font-size: 40px;"></div>
+                    <div class="current" style="text-align: end; margin-right: 10px; font-size: 40px;"></div>
                 </div>
-                <button id="clear-btn" class="btn">C</button>    
+                <button id="clear-btn" class="btn" onclick="clearScreen">C</button>    
             </div>
             <div class="row-two">
-                <button id="number-btn" class="btn">7</button>
-                <button id="number-btn" class="btn">8</button>
-                <button id="number-btn" class="btn">9</button>
-                <button id="operator-btn" class="btn">/</button>
+                <button id="number-btn" class="btn" onclick="appendToScreen('7')">7</button>
+                <button id="number-btn" class="btn" onclick="appendToScreen('8')">8</button>
+                <button id="number-btn" class="btn" onclick="appendToScreen('9')">9</button>
+                <button id="operator-btn" class="btn" onclick="appendToScreen('/')">/</button>
             </div>
             <div class="row-three">
-                <button id="number-btn" class="btn">4</button>
-                <button id="number-btn" class="btn">5</button>
-                <button id="number-btn" class="btn"> 6</button>
-                <button id="operator-btn" class="btn">x</button>
+                <button id="number-btn" class="btn" onclick="appendToScreen('4')">4</button>
+                <button id="number-btn" class="btn" onclick="appendToScreen('5')">5</button>
+                <button id="number-btn" class="btn" onclick="appendToScreen('6')"> 6</button>
+                <button id="operator-btn" class="btn" onclick="appendToScreen('*')">x</button>
             </div>
             <div class="row-four">
-                <button id="number-btn" class="btn">1</button>
-                <button id="number-btn" class="btn">2</button>
-                <button id="number-btn" class="btn">3</button>
-                <button id="operator-btn" class="btn">-</button>
+                <button id="number-btn" class="btn" onclick="appendToScreen('1')">1</button>
+                <button id="number-btn" class="btn" onclick="appendToScreen('2')">2</button>
+                <button id="number-btn" class="btn" onclick="appendToScreen('3')">3</button>
+                <button id="operator-btn" class="btn" onclick="appendToScreen('-')">-</button>
             </div>
             <div class="row-two">
-                <button id="decimal-btn" class="btn">.</button>
-                <button id="number-btn" class="btn">0</button>
-                <button id="equal-btn" class="btn">=</button>
-                <button id="operator-btn" class="btn">+</button>
+                <button id="decimal-btn" class="btn" onclick="appendToScreen('.')">.</button>
+                <button id="number-btn" class="btn" onclick="appendToScreen('0')">0</button>
+                <button id="equal-btn" class="btn" onclick="calculate()">=</button>
+                <button id="operator-btn" class="btn" onclick="appendToScreen('+')">+</button>
             </div>
         </div>
 </body>
