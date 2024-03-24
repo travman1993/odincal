@@ -66,7 +66,7 @@ function calculate(){
 
     if(operator === "+"){
         previousValue += currentValue;
-    } else if(opterator === "-"){ 
+    } else if(operator === "-"){ 
         previousValue -= currentValue;
     } else if(operator === "x"){
         previousValue *= currentValue;
@@ -74,7 +74,6 @@ function calculate(){
         previousValue /= currentValue;
     }
 
-    previousValue = roundNumber(previousValue);
     previousValue = previousValue.toString();
     currentValue = currentValue.toString();
 }
